@@ -1,0 +1,27 @@
+{
+  "name": "node.js_blog",
+  "version": "1.0.0",
+  "description": "Node.js Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrush336/Node.js_Blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Matthew R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrush336/Node.js_Blog/issues"
+  },
+  "homepage": "https://github.com/mrush336/Node.js_Blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "startbootstrap-clean-blog": "^5.0.8"
+  }
+}
