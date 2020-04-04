@@ -8,6 +8,12 @@ app.use((req, res, next) => {
 });
 app.use(express.static("public"));
 app.use(express.static("pages"));
+app.use((req, res, next) => {
+  console.log("Time:", Date.now());
+  //console.log(req);
+  //console.log(res);
+  next();
+});
 
 const PORT = process.env.PORT || 3000;
 
