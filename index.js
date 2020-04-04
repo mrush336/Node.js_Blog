@@ -3,29 +3,30 @@ const express = require("express");
 const app = new express();
 
 app.use((req, res, next) => {
-  console.log('Time: ', + Date.now());
-  next();
+	console.log("Time: ", +Date.now());
+	next();
 });
 app.use(express.static("public"));
 app.use(express.static("pages"));
 
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "pages/index.html"));
+	res.sendFile(path.resolve(__dirname, "pages/index.html"));
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "pages/about.html"));
+	res.sendFile(path.resolve(__dirname, "pages/about.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "pages/contact.html"));
+	res.sendFile(path.resolve(__dirname, "pages/contact.html"));
 });
 
 app.get("/post", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "pages/post.html"));
+	res.sendFile(path.resolve(__dirname, "pages/post.html"));
 });
 
-app.listen(3000, () => {
-  console.log("App listening on port 3000");
+app.listen(PORT, () => {
+	console.log(`App listening on port: ${PORT}`);
 });

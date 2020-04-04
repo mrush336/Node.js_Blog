@@ -1,27 +1,34 @@
 {
-  "name": "node.js_blog",
-  "version": "1.0.0",
-  "description": "Node.js Blog",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrush336/Node.js_Blog.git"
-  },
-  "keywords": [
-    "blog"
-  ],
-  "author": "Matthew R",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrush336/Node.js_Blog/issues"
-  },
-  "homepage": "https://github.com/mrush336/Node.js_Blog#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.2",
-    "startbootstrap-clean-blog": "^5.0.8"
-  }
+	"name": "node.js_blog",
+	"version": "1.0.0",
+	"description": "Node.js Blog",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon serve index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mrush336/Node.js_Blog.git"
+	},
+	"keywords": [
+		"blog"
+	],
+	"author": "Matthew R",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mrush336/Node.js_Blog/issues"
+	},
+	"homepage": "https://github.com/mrush336/Node.js_Blog#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nodemon": "^2.0.2",
+		"startbootstrap-clean-blog": "^5.0.8"
+	},
+	"devDependencies": {
+		"@azz/prettier-config": "^1.0.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^2.0.1"
+	}
 }
